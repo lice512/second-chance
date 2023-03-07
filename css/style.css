@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promo {
+    background: url(../img/promo_bg.jpg) no-repeat center / cover;
+    height: 700px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.btn_menu {
+display: none;
+flex-direction: column;
+gap: 5px;
+background: none;
+border: none;
+}
+
+.btn_menu span {
+width: 40px;
+height: 5px;
+border-radius: 10px;
+background: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.promo h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 230px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 60px;
+    background: linear-gradient(92deg, #0499dd 0%, #17c1bc 100%);
+    color: white;
+    border: none;
+}
+
+.excursion {
+    padding: 100px 0;
+}
+
+.excursion_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #0499DD;
+}
+
+.excursion_head a {
+    font-weight: 500;
+    font-size: 12px;
+    color: #282828;
+}
+
+.excursion_head a:hover {
+    text-decoration: none;
+}
+
+.excursion_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.excursion_item {
+    max-width: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 210px 15px 45px;
+    color: white;
+    border-radius: 10px;
+}
+
+.excursion_item p {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.excursion_item h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFC700;
+    margin: 2px 0 10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.details_item {
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.excursion_item .btn {
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.about {
+    background: url(../img/about.jpg) no-repeat center / cover;
+    /* image + repeat + position / size */
+    padding: 135px 0;
+}
+
+.about_box {
+    max-width: 542px;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 60px 80px;
+    margin: 0 auto;
+}
+
+.about_box h2 {
+    margin-bottom: 40px;
+}
+
+.about_box p {
+    margin-bottom: 20px;
+}
+
+.tour {
+    padding: 100px 0;
+}
+
+.tour_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin-top: 90px;
+}
+
+.tour_item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.tour_item h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #0499DD;
+    margin-bottom: 10px;
+}
+
+.tour_item p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+}
+
+.tour_desc {
+    max-width: 550px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.tour_desc p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+
+/* lg экраны < 1200px */
+@media (max-width: 1200px) {
+
+    
+}
+
+/* md экраны < 992px */
+@media (max-width: 992px) {
+   .excursion_box {
+        flex-direction: column;
+        align-items: center;
+   }
+}
+
+/* sm экраны < 768px */
+@media (max-width: 768px) {
+
+    .menu {
+            
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        transition: 500ms;
+
+        background: rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        padding: 100px 40px;
+
+
+
+    }
+
+    .menu.active {
+        display: flex;
+        left: 0;
+    }
+
+    .btn_menu {
+        display: flex;
+    }
+
+    .tour_box {
+        grid-template-columns: 1fr;
+    }
+
+    .promo {
+        height: auto;
+        padding-bottom: 80px;
+    }
+
+    .promo h1 {
+        font-size: 10vw;
+    }
+
+    .excursion_head a {
+        display: none;
+    }
+
+    .about_box {
+        padding: 50px 30px;
+    }
+}
+
+/* xs экраны < 576px */
+@media (max-width: 576px) {
+   
+}
